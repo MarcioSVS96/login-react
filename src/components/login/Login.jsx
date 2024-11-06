@@ -8,13 +8,16 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   //Precisa de uma função para envio de formulário
-  const handleSubmit = () =>{
-    console.log("Envio")
+  const handleSubmit = (event) =>{
+    event.preventDefault();
+    console.log("teste", username, password);
+    console.log("Envio");
   }
 
   return (
     <div className="container">
-      <form>
+      //Função para envio
+      <form onSubmit={handleSubmit}>
         <h1>Acesse o sistema</h1>
         <div>
           <input type="email" placeholder="Email" />
