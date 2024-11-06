@@ -55,3 +55,7 @@
 .container .recall-forget label{
     color: #fff;
 }
+
+.container .recall-forget input{
+    margin-right: 5px;
+}
