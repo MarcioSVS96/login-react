@@ -3,6 +3,10 @@ import {useState} from "react";
 import "./Login.css";
 
 const Login = () => {
+    //Primeira variavel consulta e segunda altera o valor
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+
   return (
     <div className="container">
       <form>
