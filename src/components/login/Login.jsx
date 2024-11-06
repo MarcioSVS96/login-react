@@ -16,11 +16,11 @@ const Login = () => {
 
   return (
     <div className="container">
-      //Função para envio
+      {/* Função para envio */}
       <form onSubmit={handleSubmit}>
         <h1>Acesse o sistema</h1>
         <div>
-          //Captação de valores onChange
+          {/* Captação de valores onChange */}
           <input type="email" placeholder="Email" onChange={(e) => setUsername(e.target.value)}/>
           <FaUser className="icon" />
         </div>
