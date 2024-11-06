@@ -31,3 +31,7 @@
     color: #fff;
     padding: 20px 45px;
 }
+
+.container .input-field input::placeholder{
+    color: #fff;
+}
