@@ -10,8 +10,8 @@ const Login = () => {
   //Precisa de uma função para envio de formulário
   const handleSubmit = (event) =>{
     event.preventDefault();
-    console.log("teste", username, password);
-    console.log("Envio");
+    
+    alert("enviando os dados:" + username + " - " + password);
   }
 
   return (
@@ -20,11 +20,12 @@ const Login = () => {
       <form onSubmit={handleSubmit}>
         <h1>Acesse o sistema</h1>
         <div>
-          <input type="email" placeholder="Email" />
+          //Captação de valores onChange
+          <input type="email" placeholder="Email" onChange={(e) => setUsername(e.target.value)}/>
           <FaUser className="icon" />
         </div>
         <div>
-          <input type="password" placeholder="Senha" />
+          <input type="password" placeholder="Senha" onChange={(e) => setPassword(e.target.value)}/>
           <FaLock className="icon" />
         </div>
         <div className="recall-forget">
