@@ -19,12 +19,12 @@ const Login = () => {
       {/* Função para envio */}
       <form onSubmit={handleSubmit}>
         <h1>Acesse o sistema</h1>
-        <div>
+        <div className="input-field">
           {/* Captação de valores onChange */}
           <input type="email" placeholder="Email" onChange={(e) => setUsername(e.target.value)}/>
           <FaUser className="icon" />
         </div>
-        <div>
+        <div className="input-field">
           <input type="password" placeholder="Senha" onChange={(e) => setPassword(e.target.value)}/>
           <FaLock className="icon" />
         </div>
