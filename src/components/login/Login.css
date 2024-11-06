@@ -29,9 +29,18 @@
     border-radius: 40px;
     font-size: 16px;
     color: #fff;
-    padding: 20px 45px;
+    padding: 20px 25px;
 }
 
 .container .input-field input::placeholder{
+    color: #fff;
+}
+
+.container .input-field .icon{
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
     color: #fff;
 }
